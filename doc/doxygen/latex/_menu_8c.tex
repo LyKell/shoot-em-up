@@ -1,0 +1,79 @@
+\hypertarget{_menu_8c}{}\section{src/\+Menu.c File Reference}
+\label{_menu_8c}\index{src/\+Menu.\+c@{src/\+Menu.\+c}}
+
+
+Module s\textquotesingle{}occupant des interractions avec le menu.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../include/\+Menu.\+h\char`\"{}}\newline
+Include dependency graph for Menu.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_menu_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_menu_8c_a8929075e78561143e05bac94fc9d7e98}\label{_menu_8c_a8929075e78561143e05bac94fc9d7e98}} 
+\hyperlink{structmenu}{Option} {\bfseries alloue\+\_\+option} (const char $\ast$titre)
+\item 
+void \hyperlink{_menu_8c_a0af5ad9b627d68e51f6ea0225dff33f8}{position\+\_\+image\+\_\+dans\+\_\+option} (\hyperlink{structmenu}{Option} option, int valeur)
+\begin{DoxyCompactList}\small\item\em Donne à chaque option la position des images correspondantes depuis le tableau static d\textquotesingle{}image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_menu_8c_affdd9d74b365efa658dde3b937df45ee}\label{_menu_8c_affdd9d74b365efa658dde3b937df45ee}} 
+void {\bfseries ajouter\+\_\+option} (\hyperlink{structmenu}{Option} $\ast$option, const char $\ast$titre)
+\item 
+\mbox{\Hypertarget{_menu_8c_a7d8d30d549d0646130385c8efa6ef5e0}\label{_menu_8c_a7d8d30d549d0646130385c8efa6ef5e0}} 
+void {\bfseries change\+\_\+selection} (\hyperlink{structmenu}{Option} option, const char $\ast$titre)
+\item 
+void \hyperlink{_menu_8c_aa6c122aab3a319a08bd3c8222534063e}{free\+\_\+options} (\hyperlink{structmenu}{Option} option)
+\begin{DoxyCompactList}\small\item\em Libère l\textquotesingle{}espace mémoire allouée à option. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Module s\textquotesingle{}occupant des interractions avec le menu. 
+
+\begin{DoxyAuthor}{Author}
+B\+E\+R\+G\+E\+R\+ON Youssef S\+A\+V\+A\+NE Kevin 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+11 Janvier 2020
+\end{DoxyDate}
+Module contenant une liste chainée d\textquotesingle{}option, qui auront des positions et des états. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_menu_8c_aa6c122aab3a319a08bd3c8222534063e}\label{_menu_8c_aa6c122aab3a319a08bd3c8222534063e}} 
+\index{Menu.\+c@{Menu.\+c}!free\+\_\+options@{free\+\_\+options}}
+\index{free\+\_\+options@{free\+\_\+options}!Menu.\+c@{Menu.\+c}}
+\subsubsection{\texorpdfstring{free\+\_\+options()}{free\_options()}}
+{\footnotesize\ttfamily void free\+\_\+options (\begin{DoxyParamCaption}\item[{\hyperlink{structmenu}{Option}}]{option }\end{DoxyParamCaption})}
+
+
+
+Libère l\textquotesingle{}espace mémoire allouée à option. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em option} & La liste chaînée à libérer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_menu_8c_a0af5ad9b627d68e51f6ea0225dff33f8}\label{_menu_8c_a0af5ad9b627d68e51f6ea0225dff33f8}} 
+\index{Menu.\+c@{Menu.\+c}!position\+\_\+image\+\_\+dans\+\_\+option@{position\+\_\+image\+\_\+dans\+\_\+option}}
+\index{position\+\_\+image\+\_\+dans\+\_\+option@{position\+\_\+image\+\_\+dans\+\_\+option}!Menu.\+c@{Menu.\+c}}
+\subsubsection{\texorpdfstring{position\+\_\+image\+\_\+dans\+\_\+option()}{position\_image\_dans\_option()}}
+{\footnotesize\ttfamily void position\+\_\+image\+\_\+dans\+\_\+option (\begin{DoxyParamCaption}\item[{\hyperlink{structmenu}{Option}}]{option,  }\item[{int}]{valeur }\end{DoxyParamCaption})}
+
+
+
+Donne à chaque option la position des images correspondantes depuis le tableau static d\textquotesingle{}image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em option} & La liste chaînée contenant les options valeur La position de l\textquotesingle{}image par défaut de l\textquotesingle{}option \\
+\hline
+\end{DoxyParams}

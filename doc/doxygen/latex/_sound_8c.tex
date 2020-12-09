@@ -1,0 +1,72 @@
+\hypertarget{_sound_8c}{}\section{src/\+Sound.c File Reference}
+\label{_sound_8c}\index{src/\+Sound.\+c@{src/\+Sound.\+c}}
+
+
+Module qui gère le son du jeu.  
+
+
+{\ttfamily \#include \char`\"{}../include/\+Sound.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/\+Ressource.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$M\+L\+V/\+M\+L\+V\+\_\+all.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Include dependency graph for Sound.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_sound_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+M\+L\+V\+\_\+\+Music $\ast$ \hyperlink{_sound_8c_a4e9be798b134f08cc5304ba2d2b4b46d}{background\+\_\+music} ()
+\begin{DoxyCompactList}\small\item\em Charge une musique. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_sound_8c_ade75e18ed8b209f25789eb75f5eddf3f}\label{_sound_8c_ade75e18ed8b209f25789eb75f5eddf3f}} 
+void {\bfseries joue\+\_\+musique} (const M\+L\+V\+\_\+\+Music $\ast$music)
+\item 
+M\+L\+V\+\_\+\+Sound $\ast$ \hyperlink{_sound_8c_a23c5adfed34eff93a71daa608afc6354}{charge\+\_\+son} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui charge un son pour la suite. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_sound_8c_a4598b54f927dc83b71f10e5b277f1538}\label{_sound_8c_a4598b54f927dc83b71f10e5b277f1538}} 
+void {\bfseries joue\+\_\+son} (const M\+L\+V\+\_\+\+Sound $\ast$son)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Module qui gère le son du jeu. 
+
+\begin{DoxyAuthor}{Author}
+B\+E\+R\+G\+E\+R\+ON Youssef S\+A\+V\+A\+NE Kevin 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+11 Janvier 2020
+\end{DoxyDate}
+Module s\textquotesingle{}occupant d\textquotesingle{}initialiser les sons et musiques du jeu 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_sound_8c_a4e9be798b134f08cc5304ba2d2b4b46d}\label{_sound_8c_a4e9be798b134f08cc5304ba2d2b4b46d}} 
+\index{Sound.\+c@{Sound.\+c}!background\+\_\+music@{background\+\_\+music}}
+\index{background\+\_\+music@{background\+\_\+music}!Sound.\+c@{Sound.\+c}}
+\subsubsection{\texorpdfstring{background\+\_\+music()}{background\_music()}}
+{\footnotesize\ttfamily M\+L\+V\+\_\+\+Music$\ast$ background\+\_\+music (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Charge une musique. 
+
+\begin{DoxyReturn}{Returns}
+La musique qui a été chargée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_sound_8c_a23c5adfed34eff93a71daa608afc6354}\label{_sound_8c_a23c5adfed34eff93a71daa608afc6354}} 
+\index{Sound.\+c@{Sound.\+c}!charge\+\_\+son@{charge\+\_\+son}}
+\index{charge\+\_\+son@{charge\+\_\+son}!Sound.\+c@{Sound.\+c}}
+\subsubsection{\texorpdfstring{charge\+\_\+son()}{charge\_son()}}
+{\footnotesize\ttfamily M\+L\+V\+\_\+\+Sound$\ast$ charge\+\_\+son (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui charge un son pour la suite. 
+
+\begin{DoxyReturn}{Returns}
+Le son qui a été chargé 
+\end{DoxyReturn}

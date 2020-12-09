@@ -1,0 +1,5 @@
+<map id="Allie" name="Allie">
+<area shape="rect" id="node2" href="$struct_liste__missile.html" title="Structure des missiles. " alt="" coords="5,112,104,139"/>
+<area shape="rect" id="node3" href="$structmissile.html" title="missile" alt="" coords="23,7,86,33"/>
+<area shape="rect" id="node4" href="$struct_vaisseau.html" title="Structure d&#39;un vaisseau. " alt="" coords="129,112,205,139"/>
+</map>

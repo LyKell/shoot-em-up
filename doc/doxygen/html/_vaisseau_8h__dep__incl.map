@@ -1,0 +1,15 @@
+<map id="include/Vaisseau.h" name="include/Vaisseau.h">
+<area shape="rect" id="node2" href="$_alli_xC3_xA9_8h.html" title="Module contenant les informations propres à un joueur. " alt="" coords="239,80,342,107"/>
+<area shape="rect" id="node5" href="$_main_8c.html" title="Jeu Shoot&#39;em up. " alt="" coords="292,229,375,256"/>
+<area shape="rect" id="node7" href="$_graphique_8c.html" title="Module qui gère l&#39;affichage graphique. " alt="" coords="635,229,749,256"/>
+<area shape="rect" id="node9" href="$_ennemi_8h.html" title="Module qui gère la liste des ennemis. " alt="" coords="437,80,560,107"/>
+<area shape="rect" id="node11" href="$_d_xC3_xA9placement_8h.html" title="Module qui gère les déplacement des ennemis. " alt="" coords="639,80,793,107"/>
+<area shape="rect" id="node13" href="$_tir_8c.html" title="Module qui gère les tirs des ennemis. " alt="" coords="923,80,994,107"/>
+<area shape="rect" id="node14" href="$_vaisseau_8c.html" title="Module gérant l&#39;allocation d&#39;un vaisseau. " alt="" coords="1019,80,1128,107"/>
+<area shape="rect" id="node3" href="$_collision_8h.html" title="Module tous ce qui concerne les collisions. " alt="" coords="227,155,355,181"/>
+<area shape="rect" id="node6" href="$_graphique_8h.html" title="Module qui gère l&#39;affichage graphique. " alt="" coords="430,155,567,181"/>
+<area shape="rect" id="node8" href="$_alli_xC3_xA9_8c.html" title="Module contenant les informations propres à un joueur. " alt="" coords="72,155,152,181"/>
+<area shape="rect" id="node4" href="$_collision_8c.html" title="Module tous ce qui concerne les collisions. " alt="" coords="163,229,269,256"/>
+<area shape="rect" id="node10" href="$_ennemi_8c.html" title="Module qui gère la liste des ennemis. " alt="" coords="592,155,691,181"/>
+<area shape="rect" id="node12" href="$_d_xC3_xA9placement_8c.html" title="Module qui gère les déplacement des ennemis. " alt="" coords="715,155,847,181"/>
+</map>

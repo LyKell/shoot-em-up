@@ -1,0 +1,89 @@
+\hypertarget{_alli_xC3_xA9_8c}{}\section{src/\+Allié.c File Reference}
+\label{_alli_xC3_xA9_8c}\index{src/\+Allié.\+c@{src/\+Allié.\+c}}
+
+
+Module contenant les informations propres à un joueur.  
+
+
+{\ttfamily \#include \char`\"{}../include/\+Allié.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/\+Evenement.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+Include dependency graph for Allié.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_alli_xC3_xA9_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_alli_xC3_xA9_8c_ae439c58feb18975de131aae5b769800f}{init\+\_\+allie} (\hyperlink{struct_allie}{Allie} $\ast$joueur, int hauteur, int largeur)
+\begin{DoxyCompactList}\small\item\em Fonction qui initialise la partie du joueur que l\textquotesingle{}on contrôlera. \end{DoxyCompactList}\item 
+void \hyperlink{_alli_xC3_xA9_8c_a3b475d83ef2476fa8df2ff7fdc908d68}{action\+\_\+touche} (\hyperlink{struct_allie}{Allie} $\ast$joueur, int touche\mbox{[}$\,$\mbox{]}, double accum, int hauteur, int largeur)
+\begin{DoxyCompactList}\small\item\em Fonction qui gère l\textquotesingle{}action des touches pressées par l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+void \hyperlink{_alli_xC3_xA9_8c_a0518397a76af58b91c79b6a26b5a4cd6}{free\+\_\+allie} (\hyperlink{struct_allie}{Allie} $\ast$joueur)
+\begin{DoxyCompactList}\small\item\em Fonction qui libère l\textquotesingle{}espace mémoire utilisée pour le joueur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Module contenant les informations propres à un joueur. 
+
+\begin{DoxyAuthor}{Author}
+B\+E\+R\+G\+E\+R\+ON Youssef S\+A\+V\+A\+NE Kevin 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+11 Janvier 2020
+\end{DoxyDate}
+Module contenant les fonctions d\textquotesingle{}initialisation, de déplacement et de libération de l\textquotesingle{}Allié. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_alli_xC3_xA9_8c_a3b475d83ef2476fa8df2ff7fdc908d68}\label{_alli_xC3_xA9_8c_a3b475d83ef2476fa8df2ff7fdc908d68}} 
+\index{Allié.\+c@{Allié.\+c}!action\+\_\+touche@{action\+\_\+touche}}
+\index{action\+\_\+touche@{action\+\_\+touche}!Allié.\+c@{Allié.\+c}}
+\subsubsection{\texorpdfstring{action\+\_\+touche()}{action\_touche()}}
+{\footnotesize\ttfamily void action\+\_\+touche (\begin{DoxyParamCaption}\item[{\hyperlink{struct_allie}{Allie} $\ast$}]{joueur,  }\item[{int}]{touche\mbox{[}$\,$\mbox{]},  }\item[{double}]{accum,  }\item[{int}]{hauteur,  }\item[{int}]{largeur }\end{DoxyParamCaption})}
+
+
+
+Fonction qui gère l\textquotesingle{}action des touches pressées par l\textquotesingle{}utilisateur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em joueur} & L\textquotesingle{}adresse de la strucutre du joueur touche Le tableau des touches utilisables accum Le temps écoulé hauteur La hauteur de la fenêtre largeur La largeur de la fenêtre \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_alli_xC3_xA9_8c_a0518397a76af58b91c79b6a26b5a4cd6}\label{_alli_xC3_xA9_8c_a0518397a76af58b91c79b6a26b5a4cd6}} 
+\index{Allié.\+c@{Allié.\+c}!free\+\_\+allie@{free\+\_\+allie}}
+\index{free\+\_\+allie@{free\+\_\+allie}!Allié.\+c@{Allié.\+c}}
+\subsubsection{\texorpdfstring{free\+\_\+allie()}{free\_allie()}}
+{\footnotesize\ttfamily void free\+\_\+allie (\begin{DoxyParamCaption}\item[{\hyperlink{struct_allie}{Allie} $\ast$}]{joueur }\end{DoxyParamCaption})}
+
+
+
+Fonction qui libère l\textquotesingle{}espace mémoire utilisée pour le joueur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em joueur} & L\textquotesingle{}adresse de la structure du joueur \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_alli_xC3_xA9_8c_ae439c58feb18975de131aae5b769800f}\label{_alli_xC3_xA9_8c_ae439c58feb18975de131aae5b769800f}} 
+\index{Allié.\+c@{Allié.\+c}!init\+\_\+allie@{init\+\_\+allie}}
+\index{init\+\_\+allie@{init\+\_\+allie}!Allié.\+c@{Allié.\+c}}
+\subsubsection{\texorpdfstring{init\+\_\+allie()}{init\_allie()}}
+{\footnotesize\ttfamily int init\+\_\+allie (\begin{DoxyParamCaption}\item[{\hyperlink{struct_allie}{Allie} $\ast$}]{joueur,  }\item[{int}]{hauteur,  }\item[{int}]{largeur }\end{DoxyParamCaption})}
+
+
+
+Fonction qui initialise la partie du joueur que l\textquotesingle{}on contrôlera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em joueur} & L\textquotesingle{}adresse de la structure du joueur hauteur La hauteur de la fenêtre de jeu largeur La largeur de la fenêtre de jeu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 si l\textquotesingle{}opération échoue, 1 sinon 
+\end{DoxyReturn}

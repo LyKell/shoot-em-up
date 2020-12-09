@@ -1,0 +1,8 @@
+<map id="include/Ennemi.h" name="include/Ennemi.h">
+<area shape="rect" id="node2" href="$_collision_8h.html" title="Module tous ce qui concerne les collisions. " alt="" coords="10,80,138,107"/>
+<area shape="rect" id="node4" href="$_main_8c.html" title="Jeu Shoot&#39;em up. " alt="" coords="134,155,217,181"/>
+<area shape="rect" id="node5" href="$_graphique_8h.html" title="Module qui gère l&#39;affichage graphique. " alt="" coords="213,80,351,107"/>
+<area shape="rect" id="node7" href="$_ennemi_8c.html" title="Module qui gère la liste des ennemis. " alt="" coords="375,80,474,107"/>
+<area shape="rect" id="node3" href="$_collision_8c.html" title="Module tous ce qui concerne les collisions. " alt="" coords="5,155,111,181"/>
+<area shape="rect" id="node6" href="$_graphique_8c.html" title="Module qui gère l&#39;affichage graphique. " alt="" coords="241,155,355,181"/>
+</map>

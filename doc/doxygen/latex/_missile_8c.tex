@@ -1,0 +1,162 @@
+\hypertarget{_missile_8c}{}\section{src/\+Missile.c File Reference}
+\label{_missile_8c}\index{src/\+Missile.\+c@{src/\+Missile.\+c}}
+
+
+Module qui gère la liste des missiles.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../include/\+Missile.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/\+Tir.\+h\char`\"{}}\newline
+Include dependency graph for Missile.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{_missile_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_missile_8c_af8e9b46413d9299a55912447e4f7f820}\label{_missile_8c_af8e9b46413d9299a55912447e4f7f820}} 
+\#define {\bfseries D\+U\+R\+E\+E\+\_\+\+V\+I\+E\+\_\+\+T\+E\+T\+E\+\_\+\+C\+H\+E\+R\+C\+H\+E\+U\+SE}~150
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_missile_8c_a3752f242a79d7e202e973ae89b183fb5}\label{_missile_8c_a3752f242a79d7e202e973ae89b183fb5}} 
+\hyperlink{struct_missile}{Missile} $\ast$ {\bfseries allouer\+\_\+noeud} (int x, int y, double direction, int vitesse, int pattern\+\_\+tir)
+\item 
+int \hyperlink{_missile_8c_a18ca45aa1ae79da83f5d503da754329d}{init\+\_\+liste\+\_\+missile} (\hyperlink{struct_liste__missile}{Liste\+\_\+missile} $\ast$liste\+\_\+missile)
+\begin{DoxyCompactList}\small\item\em Fonction qui initialise la liste des missiles (sans allocation) \end{DoxyCompactList}\item 
+int \hyperlink{_missile_8c_aedfb2653d33089b80d0a73ed6b112837}{ajout\+\_\+missile} (\hyperlink{struct_liste__missile}{Liste\+\_\+missile} $\ast$liste\+\_\+missile, int x, int y, double direction, int vitesse, int pattern\+\_\+tir)
+\begin{DoxyCompactList}\small\item\em Fonction qui ajoute une missile à la liste des missiles. \end{DoxyCompactList}\item 
+\hyperlink{struct_missile}{Missile} $\ast$ \hyperlink{_missile_8c_a61c43fe20a4e2611696f972d74790331}{supprime\+\_\+missile} (\hyperlink{struct_liste__missile}{Liste\+\_\+missile} $\ast$liste\+\_\+missile, \hyperlink{struct_missile}{Missile} $\ast$\hyperlink{structmissile}{missile}, int pos)
+\begin{DoxyCompactList}\small\item\em Fonction qui supprime un missile en position pos de la liste des missiles. \end{DoxyCompactList}\item 
+double \hyperlink{_missile_8c_a0283cc05e1dd9c351644b65cf85dbac3}{angle\+\_\+tir} (int x1, int y1, int x2, int y2)
+\begin{DoxyCompactList}\small\item\em Fonction qui calcule l\textquotesingle{}angle de tir d\textquotesingle{}un missile pour viser l\textquotesingle{}allié \end{DoxyCompactList}\item 
+int \hyperlink{_missile_8c_a9ae19e8ca9915560d42bba054f11a334}{actualise\+\_\+missile} (\hyperlink{struct_liste__missile}{Liste\+\_\+missile} $\ast$liste\+\_\+missile, int hauteur, int largeur, int x, int y)
+\begin{DoxyCompactList}\small\item\em Fonction qui actualise la liste des missiles (leur position) \end{DoxyCompactList}\item 
+void \hyperlink{_missile_8c_ad1272e4a5f17ae827275ba475c2c133c}{free\+\_\+liste\+\_\+missile} (\hyperlink{struct_liste__missile}{Liste\+\_\+missile} $\ast$liste\+\_\+missile)
+\begin{DoxyCompactList}\small\item\em Fonction qui libère l\textquotesingle{}espace mémoire occupée par les missiles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Module qui gère la liste des missiles. 
+
+\begin{DoxyAuthor}{Author}
+B\+E\+R\+G\+E\+R\+ON Youssef S\+A\+V\+A\+NE Kevin 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+11 Janvier 2020
+\end{DoxyDate}
+Module qui gère la liste des missiles en l\textquotesingle{}initialisant, ajoutant des éléments ou les supprimant 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_missile_8c_a9ae19e8ca9915560d42bba054f11a334}\label{_missile_8c_a9ae19e8ca9915560d42bba054f11a334}} 
+\index{Missile.\+c@{Missile.\+c}!actualise\+\_\+missile@{actualise\+\_\+missile}}
+\index{actualise\+\_\+missile@{actualise\+\_\+missile}!Missile.\+c@{Missile.\+c}}
+\subsubsection{\texorpdfstring{actualise\+\_\+missile()}{actualise\_missile()}}
+{\footnotesize\ttfamily int actualise\+\_\+missile (\begin{DoxyParamCaption}\item[{\hyperlink{struct_liste__missile}{Liste\+\_\+missile} $\ast$}]{liste\+\_\+missile,  }\item[{int}]{hauteur,  }\item[{int}]{largeur,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Fonction qui actualise la liste des missiles (leur position) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em liste\+\_\+missile} & L\textquotesingle{}adresse de la structure des missiles hauteur La hauteur de la fenêtre largeur La largeur de la fenêtre x La coordonnée X du joueur allié y La coordonnée Y du joueur allié \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_missile_8c_aedfb2653d33089b80d0a73ed6b112837}\label{_missile_8c_aedfb2653d33089b80d0a73ed6b112837}} 
+\index{Missile.\+c@{Missile.\+c}!ajout\+\_\+missile@{ajout\+\_\+missile}}
+\index{ajout\+\_\+missile@{ajout\+\_\+missile}!Missile.\+c@{Missile.\+c}}
+\subsubsection{\texorpdfstring{ajout\+\_\+missile()}{ajout\_missile()}}
+{\footnotesize\ttfamily int ajout\+\_\+missile (\begin{DoxyParamCaption}\item[{\hyperlink{struct_liste__missile}{Liste\+\_\+missile} $\ast$}]{liste\+\_\+missile,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{direction,  }\item[{int}]{vitesse,  }\item[{int}]{pattern\+\_\+tir }\end{DoxyParamCaption})}
+
+
+
+Fonction qui ajoute une missile à la liste des missiles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em liste\+\_\+missile} & L\textquotesingle{}adresse de la structure des missiles x La coordonnée X du nouveau missile y La coordonnée Y du nouveau missile direction La direction du nouveau missile vitesse La vitesse du nouveau missile pattern\+\_\+tir Le pattern de tir du nouveau missile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 si le missile n\textquotesingle{}a pas pu être initialisé, 1 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_missile_8c_a0283cc05e1dd9c351644b65cf85dbac3}\label{_missile_8c_a0283cc05e1dd9c351644b65cf85dbac3}} 
+\index{Missile.\+c@{Missile.\+c}!angle\+\_\+tir@{angle\+\_\+tir}}
+\index{angle\+\_\+tir@{angle\+\_\+tir}!Missile.\+c@{Missile.\+c}}
+\subsubsection{\texorpdfstring{angle\+\_\+tir()}{angle\_tir()}}
+{\footnotesize\ttfamily double angle\+\_\+tir (\begin{DoxyParamCaption}\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2 }\end{DoxyParamCaption})}
+
+
+
+Fonction qui calcule l\textquotesingle{}angle de tir d\textquotesingle{}un missile pour viser l\textquotesingle{}allié 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1} & La coordonnée X du tireur x2 La coordonnée Y du tireur y1 La coordonnée X de la cible y2 La coordonnée Y de la cible \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L\textquotesingle{}angle une fois calculé 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_missile_8c_ad1272e4a5f17ae827275ba475c2c133c}\label{_missile_8c_ad1272e4a5f17ae827275ba475c2c133c}} 
+\index{Missile.\+c@{Missile.\+c}!free\+\_\+liste\+\_\+missile@{free\+\_\+liste\+\_\+missile}}
+\index{free\+\_\+liste\+\_\+missile@{free\+\_\+liste\+\_\+missile}!Missile.\+c@{Missile.\+c}}
+\subsubsection{\texorpdfstring{free\+\_\+liste\+\_\+missile()}{free\_liste\_missile()}}
+{\footnotesize\ttfamily void free\+\_\+liste\+\_\+missile (\begin{DoxyParamCaption}\item[{\hyperlink{struct_liste__missile}{Liste\+\_\+missile} $\ast$}]{liste\+\_\+missile }\end{DoxyParamCaption})}
+
+
+
+Fonction qui libère l\textquotesingle{}espace mémoire occupée par les missiles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em liste\+\_\+missile} & L\textquotesingle{}adresse de la structure des missiles \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_missile_8c_a18ca45aa1ae79da83f5d503da754329d}\label{_missile_8c_a18ca45aa1ae79da83f5d503da754329d}} 
+\index{Missile.\+c@{Missile.\+c}!init\+\_\+liste\+\_\+missile@{init\+\_\+liste\+\_\+missile}}
+\index{init\+\_\+liste\+\_\+missile@{init\+\_\+liste\+\_\+missile}!Missile.\+c@{Missile.\+c}}
+\subsubsection{\texorpdfstring{init\+\_\+liste\+\_\+missile()}{init\_liste\_missile()}}
+{\footnotesize\ttfamily int init\+\_\+liste\+\_\+missile (\begin{DoxyParamCaption}\item[{\hyperlink{struct_liste__missile}{Liste\+\_\+missile} $\ast$}]{liste\+\_\+missile }\end{DoxyParamCaption})}
+
+
+
+Fonction qui initialise la liste des missiles (sans allocation) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em liste\+\_\+missile} & L\textquotesingle{}adresse de la structure des missiles à initialiser \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_missile_8c_a61c43fe20a4e2611696f972d74790331}\label{_missile_8c_a61c43fe20a4e2611696f972d74790331}} 
+\index{Missile.\+c@{Missile.\+c}!supprime\+\_\+missile@{supprime\+\_\+missile}}
+\index{supprime\+\_\+missile@{supprime\+\_\+missile}!Missile.\+c@{Missile.\+c}}
+\subsubsection{\texorpdfstring{supprime\+\_\+missile()}{supprime\_missile()}}
+{\footnotesize\ttfamily \hyperlink{struct_missile}{Missile}$\ast$ supprime\+\_\+missile (\begin{DoxyParamCaption}\item[{\hyperlink{struct_liste__missile}{Liste\+\_\+missile} $\ast$}]{liste\+\_\+missile,  }\item[{\hyperlink{struct_missile}{Missile} $\ast$}]{missile,  }\item[{int}]{pos }\end{DoxyParamCaption})}
+
+
+
+Fonction qui supprime un missile en position pos de la liste des missiles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em liste\+\_\+missile} & L\textquotesingle{}adresse de la structure des missiles missile L\textquotesingle{}adresse du missile à supprimer pos La position du missile dans la liste \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L\textquotesingle{}adresse du missile suivant 
+\end{DoxyReturn}

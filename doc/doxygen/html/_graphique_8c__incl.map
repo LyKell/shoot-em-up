@@ -1,0 +1,11 @@
+<map id="src/Graphique.c" name="src/Graphique.c">
+<area shape="rect" id="node2" href="$_graphique_8h.html" title="Module qui gère l&#39;affichage graphique. " alt="" coords="82,80,232,107"/>
+<area shape="rect" id="node4" href="$_vaisseau_8h.html" title="Module gérant l&#39;allocation d&#39;un vaisseau. " alt="" coords="160,229,247,256"/>
+<area shape="rect" id="node5" href="$_missile_8h.html" title="Module qui gère la liste des missiles. " alt="" coords="272,229,346,256"/>
+<area shape="rect" id="node11" href="$_ressource_8h_source.html" title="../include/Ressource.h" alt="" coords="450,80,603,107"/>
+<area shape="rect" id="node3" href="$_ennemi_8h.html" title="Module qui gère la liste des ennemis. " alt="" coords="22,155,100,181"/>
+<area shape="rect" id="node6" href="$_explosion_8h.html" title="Module qui gère la liste des explosions. " alt="" coords="16,229,106,256"/>
+<area shape="rect" id="node9" href="$_alli_xC3_xA9_8h.html" title="Module contenant les informations propres à un joueur. " alt="" coords="214,155,273,181"/>
+<area shape="rect" id="node10" href="$_menu_8h.html" title="Module s&#39;occupant des interractions avec le menu. " alt="" coords="124,155,190,181"/>
+<area shape="rect" id="node7" href="$_sound_8h.html" title="Module qui gère le son du jeu. " alt="" coords="164,304,235,331"/>
+</map>

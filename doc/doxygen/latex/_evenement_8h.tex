@@ -1,0 +1,102 @@
+\hypertarget{_evenement_8h}{}\section{include/\+Evenement.h File Reference}
+\label{_evenement_8h}\index{include/\+Evenement.\+h@{include/\+Evenement.\+h}}
+
+
+Module gérant les interractions joueur/clavier.  
+
+
+{\ttfamily \#include $<$M\+L\+V/\+M\+L\+V\+\_\+all.\+h$>$}\newline
+Include dependency graph for Evenement.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{_evenement_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{_evenement_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_evenement_8h_a1c1317af2f97a964a219cc81cbfedc63}{Touche} \{ \newline
+{\bfseries UP}, 
+{\bfseries L\+E\+FT}, 
+{\bfseries R\+I\+G\+HT}, 
+{\bfseries D\+O\+WN}, 
+\newline
+{\bfseries S\+P\+A\+CE}, 
+{\bfseries E}, 
+{\bfseries A}
+ \}\begin{DoxyCompactList}\small\item\em Constantes de touche. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_evenement_8h_ab46734edc7098ae99434d3a8d8f40435}{gestion\+\_\+touche} (int touche\mbox{[}$\,$\mbox{]}, M\+L\+V\+\_\+\+Keyboard\+\_\+button keysym, M\+L\+V\+\_\+\+Button\+\_\+state state)
+\begin{DoxyCompactList}\small\item\em Fonction qui gère la touche pressée et qui l\textquotesingle{}integre dans un tableau de touche. \end{DoxyCompactList}\item 
+void \hyperlink{_evenement_8h_a2723363a4945724735430ae873c96668}{remise\+\_\+zero\+\_\+touche} (int touche\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Fonction qui remet à 0 toutes les touches du tableau. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Module gérant les interractions joueur/clavier. 
+
+\begin{DoxyAuthor}{Author}
+B\+E\+R\+G\+E\+R\+ON Youssef S\+A\+V\+A\+NE Kevin 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+11 Janvier 2020
+\end{DoxyDate}
+Module contenant une fonction de gestion des touches selon leurs états. 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_evenement_8h_a1c1317af2f97a964a219cc81cbfedc63}\label{_evenement_8h_a1c1317af2f97a964a219cc81cbfedc63}} 
+\index{Evenement.\+h@{Evenement.\+h}!Touche@{Touche}}
+\index{Touche@{Touche}!Evenement.\+h@{Evenement.\+h}}
+\subsubsection{\texorpdfstring{Touche}{Touche}}
+{\footnotesize\ttfamily enum \hyperlink{_evenement_8h_a1c1317af2f97a964a219cc81cbfedc63}{Touche}}
+
+
+
+Constantes de touche. 
+
+Touche est une série de constantes prédéfinie pour diverses touches 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_evenement_8h_ab46734edc7098ae99434d3a8d8f40435}\label{_evenement_8h_ab46734edc7098ae99434d3a8d8f40435}} 
+\index{Evenement.\+h@{Evenement.\+h}!gestion\+\_\+touche@{gestion\+\_\+touche}}
+\index{gestion\+\_\+touche@{gestion\+\_\+touche}!Evenement.\+h@{Evenement.\+h}}
+\subsubsection{\texorpdfstring{gestion\+\_\+touche()}{gestion\_touche()}}
+{\footnotesize\ttfamily void gestion\+\_\+touche (\begin{DoxyParamCaption}\item[{int}]{touche\mbox{[}$\,$\mbox{]},  }\item[{M\+L\+V\+\_\+\+Keyboard\+\_\+button}]{keysym,  }\item[{M\+L\+V\+\_\+\+Button\+\_\+state}]{state }\end{DoxyParamCaption})}
+
+
+
+Fonction qui gère la touche pressée et qui l\textquotesingle{}integre dans un tableau de touche. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em touche} & Le tableau de touches keysym La touche fournie state L\textquotesingle{}état de la touche \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_evenement_8h_a2723363a4945724735430ae873c96668}\label{_evenement_8h_a2723363a4945724735430ae873c96668}} 
+\index{Evenement.\+h@{Evenement.\+h}!remise\+\_\+zero\+\_\+touche@{remise\+\_\+zero\+\_\+touche}}
+\index{remise\+\_\+zero\+\_\+touche@{remise\+\_\+zero\+\_\+touche}!Evenement.\+h@{Evenement.\+h}}
+\subsubsection{\texorpdfstring{remise\+\_\+zero\+\_\+touche()}{remise\_zero\_touche()}}
+{\footnotesize\ttfamily void remise\+\_\+zero\+\_\+touche (\begin{DoxyParamCaption}\item[{int}]{touche\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Fonction qui remet à 0 toutes les touches du tableau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em touche} & Le tableau de touches \\
+\hline
+\end{DoxyParams}

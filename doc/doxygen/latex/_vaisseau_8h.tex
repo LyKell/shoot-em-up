@@ -1,0 +1,78 @@
+\hypertarget{_vaisseau_8h}{}\section{include/\+Vaisseau.h File Reference}
+\label{_vaisseau_8h}\index{include/\+Vaisseau.\+h@{include/\+Vaisseau.\+h}}
+
+
+Module gérant l\textquotesingle{}allocation d\textquotesingle{}un vaisseau.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_vaisseau_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structvaisseau}{vaisseau}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_vaisseau_8h_a8f8b8e472921c251bcd391e47ecdf192}\label{_vaisseau_8h_a8f8b8e472921c251bcd391e47ecdf192}} 
+\#define {\bfseries L\+A\+R\+G\+E\+U\+R\+\_\+\+V\+A\+I\+S\+S\+E\+AU}~30
+\item 
+\mbox{\Hypertarget{_vaisseau_8h_a6a0d514a65ce88924b50b37659badec7}\label{_vaisseau_8h_a6a0d514a65ce88924b50b37659badec7}} 
+\#define {\bfseries H\+A\+U\+T\+E\+U\+R\+\_\+\+V\+A\+I\+S\+S\+E\+AU}~40
+\item 
+\mbox{\Hypertarget{_vaisseau_8h_a27e6e97571594708d9aef7bad1b2e182}\label{_vaisseau_8h_a27e6e97571594708d9aef7bad1b2e182}} 
+\#define {\bfseries L\+A\+R\+G\+E\+U\+R\+\_\+\+B\+O\+SS}~50
+\item 
+\mbox{\Hypertarget{_vaisseau_8h_a8ed32b181f0aaea0fe2758cf98c92819}\label{_vaisseau_8h_a8ed32b181f0aaea0fe2758cf98c92819}} 
+\#define {\bfseries H\+A\+U\+T\+E\+U\+R\+\_\+\+B\+O\+SS}~80
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_vaisseau_8h_ab0b0be67de9ae86d2ec803caacdec369}\label{_vaisseau_8h_ab0b0be67de9ae86d2ec803caacdec369}} 
+typedef struct \hyperlink{structvaisseau}{vaisseau} {\bfseries Vaisseau}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_vaisseau}{Vaisseau} $\ast$ \hyperlink{_vaisseau_8h_a9020bde0a0c771e54c6776984dc4a5e4}{alloue\+\_\+vaisseau} (double x, double y, int vitesse, int vie)
+\begin{DoxyCompactList}\small\item\em Fonction qui alloue un vaisseau en position (x, y) avec une vitesse et une vie donnée. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Module gérant l\textquotesingle{}allocation d\textquotesingle{}un vaisseau. 
+
+\begin{DoxyAuthor}{Author}
+B\+E\+R\+G\+E\+R\+ON Youssef S\+A\+V\+A\+NE Kevin 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+11 Janvier 2020 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_vaisseau_8h_a9020bde0a0c771e54c6776984dc4a5e4}\label{_vaisseau_8h_a9020bde0a0c771e54c6776984dc4a5e4}} 
+\index{Vaisseau.\+h@{Vaisseau.\+h}!alloue\+\_\+vaisseau@{alloue\+\_\+vaisseau}}
+\index{alloue\+\_\+vaisseau@{alloue\+\_\+vaisseau}!Vaisseau.\+h@{Vaisseau.\+h}}
+\subsubsection{\texorpdfstring{alloue\+\_\+vaisseau()}{alloue\_vaisseau()}}
+{\footnotesize\ttfamily \hyperlink{struct_vaisseau}{Vaisseau} $\ast$ alloue\+\_\+vaisseau (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{int}]{vitesse,  }\item[{int}]{vie }\end{DoxyParamCaption})}
+
+
+
+Fonction qui alloue un vaisseau en position (x, y) avec une vitesse et une vie donnée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & La coordonnée X du vaisseau y La coordonnée Y du vaisseau vitesse La vitesse du vaisseau vie La vie du vaisseau \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Le vaisseau alloué 
+\end{DoxyReturn}

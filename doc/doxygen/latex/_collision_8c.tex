@@ -1,0 +1,52 @@
+\hypertarget{_collision_8c}{}\section{src/\+Collision.c File Reference}
+\label{_collision_8c}\index{src/\+Collision.\+c@{src/\+Collision.\+c}}
+
+
+Module tous ce qui concerne les collisions.  
+
+
+{\ttfamily \#include $<$M\+L\+V/\+M\+L\+V\+\_\+all.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../include/\+Collision.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/\+Missile.\+h\char`\"{}}\newline
+Include dependency graph for Collision.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{_collision_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_collision_8c_af082905f7eac6d03e92015146bbc1925}\label{_collision_8c_af082905f7eac6d03e92015146bbc1925}} 
+int {\bfseries max} (int a, int b)
+\item 
+\mbox{\Hypertarget{_collision_8c_abd8bbcfabb3ddef2ccaafb9928a37b95}\label{_collision_8c_abd8bbcfabb3ddef2ccaafb9928a37b95}} 
+int {\bfseries min} (int a, int b)
+\item 
+\mbox{\Hypertarget{_collision_8c_a0dcb92b344c37f38c0a0677ed7ca9eae}\label{_collision_8c_a0dcb92b344c37f38c0a0677ed7ca9eae}} 
+int {\bfseries inter} (int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4, int $\ast$xhg, int $\ast$yhg, int $\ast$xbd, int $\ast$ybd)
+\item 
+\mbox{\Hypertarget{_collision_8c_a018bc24bdcb133e32777548190a27836}\label{_collision_8c_a018bc24bdcb133e32777548190a27836}} 
+int {\bfseries collision\+\_\+missile\+\_\+vaisseau} (\hyperlink{struct_liste__missile}{Liste\+\_\+missile} $\ast$missiles, \hyperlink{struct_liste__ennemi}{Liste\+\_\+ennemi} $\ast$ennemis, \hyperlink{struct_vaisseau}{Vaisseau} $\ast$$\ast$\hyperlink{structvaisseau}{vaisseau}, int camp, int pos\+\_\+ennemi, int largeur, int hauteur, \hyperlink{struct_liste__explosion}{Liste\+\_\+explosion} $\ast$liste\+\_\+explosion)
+\item 
+\mbox{\Hypertarget{_collision_8c_ad0dc24607476ebee6a96ef3363471967}\label{_collision_8c_ad0dc24607476ebee6a96ef3363471967}} 
+int {\bfseries collision\+\_\+vaisseau\+\_\+vaisseau} (\hyperlink{struct_liste__ennemi}{Liste\+\_\+ennemi} $\ast$ennemis, \hyperlink{struct_vaisseau}{Vaisseau} $\ast$$\ast$vaisseau1, \hyperlink{struct_vaisseau}{Vaisseau} $\ast$$\ast$vaisseau2, double $\ast$ax, double $\ast$ay, int camp, int pos\+\_\+ennemi, int pos\+\_\+ennemi2, int largeur1, int hauteur1, int largeur2, int hauteur2, \hyperlink{struct_liste__explosion}{Liste\+\_\+explosion} $\ast$liste\+\_\+explosion)
+\item 
+\mbox{\Hypertarget{_collision_8c_af0095b2abfe49a71258f92dfc77470b0}\label{_collision_8c_af0095b2abfe49a71258f92dfc77470b0}} 
+void {\bfseries gestion\+\_\+collision} (\hyperlink{struct_allie}{Allie} $\ast$joueur, \hyperlink{struct_liste__ennemi}{Liste\+\_\+ennemi} $\ast$liste\+\_\+ennemi, int largeur, int hauteur, \hyperlink{struct_liste__explosion}{Liste\+\_\+explosion} $\ast$liste\+\_\+explosion, const M\+L\+V\+\_\+\+Sound $\ast$son)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Module tous ce qui concerne les collisions. 
+
+\begin{DoxyAuthor}{Author}
+B\+E\+R\+G\+E\+R\+ON Youssef S\+A\+V\+A\+NE Kevin 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+11 Janvier 2020
+\end{DoxyDate}
+Module gérant les collisions entre vaisseau et les collisions missiles/vaisseau. 

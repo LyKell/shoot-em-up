@@ -1,0 +1,5 @@
+<map id="Liste_ennemi" name="Liste_ennemi">
+<area shape="rect" id="node2" href="$struct_liste__missile.html" title="Structure des missiles. " alt="" coords="5,113,104,140"/>
+<area shape="rect" id="node3" href="$structmissile.html" title="missile" alt="" coords="23,7,86,33"/>
+<area shape="rect" id="node4" href="$structvaisseau.html" title="vaisseau" alt="" coords="128,113,203,140"/>
+</map>

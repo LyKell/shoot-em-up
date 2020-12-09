@@ -1,0 +1,254 @@
+\hypertarget{_graphique_8h}{}\section{include/\+Graphique.h File Reference}
+\label{_graphique_8h}\index{include/\+Graphique.\+h@{include/\+Graphique.\+h}}
+
+
+Module qui gère l\textquotesingle{}affichage graphique.  
+
+
+{\ttfamily \#include \char`\"{}Ennemi.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Allié.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Menu.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Explosion.\+h\char`\"{}}\newline
+Include dependency graph for Graphique.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{_graphique_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{_graphique_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_graphique_8h_a6068a247ff9ece1b0a9773c58144906c}\label{_graphique_8h_a6068a247ff9ece1b0a9773c58144906c}} 
+\#define {\bfseries L\+A\+R\+G\+E\+U\+R\+\_\+\+F\+E\+N\+E\+T\+RE}~(L\+A\+R\+G\+E\+UR + 213)
+\item 
+\mbox{\Hypertarget{_graphique_8h_a4d752b169c004dac6e2f8ec32587ae78}\label{_graphique_8h_a4d752b169c004dac6e2f8ec32587ae78}} 
+\#define {\bfseries L\+A\+R\+G\+E\+U\+R\+\_\+\+H\+I\+G\+H\+S\+C\+O\+RE}~(L\+A\+R\+G\+E\+U\+R\+\_\+\+F\+E\+N\+E\+T\+RE / 2)
+\item 
+\mbox{\Hypertarget{_graphique_8h_a3d3bf5a2f88b1dba6c6bc13bf889c3cc}\label{_graphique_8h_a3d3bf5a2f88b1dba6c6bc13bf889c3cc}} 
+\#define {\bfseries L\+A\+R\+G\+E\+UR}~640
+\item 
+\mbox{\Hypertarget{_graphique_8h_ad629b1db4ee230dc5de47de843476e72}\label{_graphique_8h_ad629b1db4ee230dc5de47de843476e72}} 
+\#define {\bfseries H\+A\+U\+T\+E\+UR}~480
+\item 
+\mbox{\Hypertarget{_graphique_8h_a3bebcde1e08120bd397fe8f0cac5e9f7}\label{_graphique_8h_a3bebcde1e08120bd397fe8f0cac5e9f7}} 
+\#define {\bfseries M\+E\+N\+U\+\_\+\+W\+\_\+\+O\+R\+IG}~450
+\item 
+\mbox{\Hypertarget{_graphique_8h_abe46fb97dfd31217e44ac6e7a866f36c}\label{_graphique_8h_abe46fb97dfd31217e44ac6e7a866f36c}} 
+\#define {\bfseries M\+E\+N\+U\+\_\+\+H\+\_\+\+O\+R\+IG}~120
+\item 
+\mbox{\Hypertarget{_graphique_8h_a44dd1b46a3f55007e78fc1ac506153b9}\label{_graphique_8h_a44dd1b46a3f55007e78fc1ac506153b9}} 
+\#define {\bfseries M\+A\+I\+N\+\_\+\+M\+E\+NU}~0
+\item 
+\mbox{\Hypertarget{_graphique_8h_a6b992686dce516ea7845f591f8dab477}\label{_graphique_8h_a6b992686dce516ea7845f591f8dab477}} 
+\#define {\bfseries H\+I\+G\+H\+S\+C\+O\+R\+E\+\_\+\+M\+E\+NU}~1
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_graphique_8h_aa90d0b7c92a440716e2c165ec72bbbf1}{init\+\_\+tab\+\_\+image} (\hyperlink{structmenu}{Option} option)
+\begin{DoxyCompactList}\small\item\em Fonction qui initialise un tableau d\textquotesingle{}image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_graphique_8h_a920db9fa1fedea6df509c2e11e10fa62}\label{_graphique_8h_a920db9fa1fedea6df509c2e11e10fa62}} 
+void \hyperlink{_graphique_8h_a920db9fa1fedea6df509c2e11e10fa62}{free\+\_\+tab\+\_\+image} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui libère l\textquotesingle{}espace mémoire utilisée par le tableau d\textquotesingle{}images. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_graphique_8h_ad0a0dae51c7fea0987f87c66fe443e2e}\label{_graphique_8h_ad0a0dae51c7fea0987f87c66fe443e2e}} 
+void \hyperlink{_graphique_8h_ad0a0dae51c7fea0987f87c66fe443e2e}{init\+\_\+tab\+\_\+explosion} ()
+\begin{DoxyCompactList}\small\item\em Initialise le tableau contenant les frames des explosions. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_graphique_8h_aeaf5273fd0f063abb1971f168261eda9}\label{_graphique_8h_aeaf5273fd0f063abb1971f168261eda9}} 
+void \hyperlink{_graphique_8h_aeaf5273fd0f063abb1971f168261eda9}{free\+\_\+tab\+\_\+explosion} ()
+\begin{DoxyCompactList}\small\item\em Libère l\textquotesingle{}espace mémoire utilisée par le tableau des frames d\textquotesingle{}explosion. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_graphique_8h_a7ef30b6ffe365e5200a905035e2a6af3}\label{_graphique_8h_a7ef30b6ffe365e5200a905035e2a6af3}} 
+void \hyperlink{_graphique_8h_a7ef30b6ffe365e5200a905035e2a6af3}{cree\+\_\+fenetre} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui crée une fenetre de jeu. \end{DoxyCompactList}\item 
+void \hyperlink{_graphique_8h_adbf97d6e2f0a5c8cef2102bdf75bb3ae}{dessine\+\_\+fenetre} (const \hyperlink{struct_allie}{Allie} $\ast$joueur, const \hyperlink{struct_liste__ennemi}{Liste\+\_\+ennemi} $\ast$liste\+\_\+ennemi, const \hyperlink{struct_liste__ennemi}{Liste\+\_\+ennemi} $\ast$boss, const \hyperlink{struct_liste__explosion}{Liste\+\_\+explosion} $\ast$liste\+\_\+explosion, int $\ast$y, int $\ast$nb\+\_\+alea, int hp\+\_\+vaisseau, int temps\+\_\+ecoule)
+\begin{DoxyCompactList}\small\item\em Fonction qui dessine l\textquotesingle{}ensemble de la fenêtre de jeu. \end{DoxyCompactList}\item 
+void \hyperlink{_graphique_8h_a7ec39a89b39d70ecf43edaf8cafa8aec}{dessine\+\_\+menu} (\hyperlink{structmenu}{Option} option, int valeur)
+\begin{DoxyCompactList}\small\item\em Dessine l\textquotesingle{}intégralité du menu. \end{DoxyCompactList}\item 
+void \hyperlink{_graphique_8h_a4520aa5e7a00b8bf0d1b6ab19d8be8b6}{recupere\+\_\+taille\+\_\+options} (\hyperlink{structmenu}{Option} option)
+\begin{DoxyCompactList}\small\item\em Récupère la taille des images du menu (Start, Highscore, Quit et Back) \end{DoxyCompactList}\item 
+void \hyperlink{_graphique_8h_aca08bacd11b8e45978f77b9287d45551}{dessine\+\_\+options} (\hyperlink{structmenu}{Option} option, int valeur)
+\begin{DoxyCompactList}\small\item\em Dessine les options selon leur état (survolé ou non) et du menu actuel (Principal ou Highscore) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_graphique_8h_adacfd42b0ceba7ade117d8d6779ae8e1}\label{_graphique_8h_adacfd42b0ceba7ade117d8d6779ae8e1}} 
+void \hyperlink{_graphique_8h_adacfd42b0ceba7ade117d8d6779ae8e1}{dessine\+\_\+highscore\+\_\+dans\+\_\+menu} ()
+\begin{DoxyCompactList}\small\item\em Affiche sur le menu Highscore les scores. \end{DoxyCompactList}\item 
+int \hyperlink{_graphique_8h_ae083b7a392075cbef9a1e3cc2103895b}{survole\+\_\+et\+\_\+selectionne\+\_\+option} (\hyperlink{structmenu}{Option} option, int valeur)
+\begin{DoxyCompactList}\small\item\em Indique à une option qu\textquotesingle{}on la survole à la souris. \end{DoxyCompactList}\item 
+int \hyperlink{_graphique_8h_a3b8915e338c17262c0ffcaf3cc143362}{survole\+\_\+option} (\hyperlink{structmenu}{Option} tmp, const \hyperlink{structmenu}{Option} option)
+\begin{DoxyCompactList}\small\item\em Change l\textquotesingle{}état de l\textquotesingle{}option et la sélectionne pour y accéder. \end{DoxyCompactList}\item 
+int \hyperlink{_graphique_8h_a8340f5220b3791d6e65165eec2650a86}{selectionne\+\_\+option} (char $\ast$titre)
+\begin{DoxyCompactList}\small\item\em Sélectionne une option. \end{DoxyCompactList}\item 
+void \hyperlink{_graphique_8h_a00907bb6336940e9b2db8a20716732ab}{sauvegarde\+\_\+nom\+\_\+joueur\+\_\+pour\+\_\+highscore} (char $\ast$$\ast$nom\+\_\+joueur)
+\begin{DoxyCompactList}\small\item\em Fonction qui demande au joueur d\textquotesingle{}entrer un nom pour son score. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Module qui gère l\textquotesingle{}affichage graphique. 
+
+\begin{DoxyAuthor}{Author}
+B\+E\+R\+G\+E\+R\+ON Youssef S\+A\+V\+A\+NE Kevin 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+11 Janvier 2020
+\end{DoxyDate}
+Module s\textquotesingle{}occupant d\textquotesingle{}afficher les menus, la fenêtre du jeu, les éléments du jeu 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_graphique_8h_adbf97d6e2f0a5c8cef2102bdf75bb3ae}\label{_graphique_8h_adbf97d6e2f0a5c8cef2102bdf75bb3ae}} 
+\index{Graphique.\+h@{Graphique.\+h}!dessine\+\_\+fenetre@{dessine\+\_\+fenetre}}
+\index{dessine\+\_\+fenetre@{dessine\+\_\+fenetre}!Graphique.\+h@{Graphique.\+h}}
+\subsubsection{\texorpdfstring{dessine\+\_\+fenetre()}{dessine\_fenetre()}}
+{\footnotesize\ttfamily void dessine\+\_\+fenetre (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_allie}{Allie} $\ast$}]{joueur,  }\item[{const \hyperlink{struct_liste__ennemi}{Liste\+\_\+ennemi} $\ast$}]{liste\+\_\+ennemi,  }\item[{const \hyperlink{struct_liste__ennemi}{Liste\+\_\+ennemi} $\ast$}]{boss,  }\item[{const \hyperlink{struct_liste__explosion}{Liste\+\_\+explosion} $\ast$}]{liste\+\_\+explosion,  }\item[{int $\ast$}]{y,  }\item[{int $\ast$}]{nb\+\_\+alea,  }\item[{int}]{hp\+\_\+vaisseau,  }\item[{int}]{temps\+\_\+ecoule }\end{DoxyParamCaption})}
+
+
+
+Fonction qui dessine l\textquotesingle{}ensemble de la fenêtre de jeu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em joueur} & L\textquotesingle{}adresse de la structure de l\textquotesingle{}allié liste\+\_\+ennemi L\textquotesingle{}adresse de la strucutre des ennemis boss L\textquotesingle{}adresse de la structure des boss liste\+\_\+explosion L\textquotesingle{}adresse de la structure des explosions y L\textquotesingle{}entier de défilement de l\textquotesingle{}écran nb\+\_\+alea Un entier permettant de choisir un boss aléatoirement hp\+\_\+vaisseau La vie totale du vaisseau temps\+\_\+ecoule Le temps écoulé depuis le début de la partie \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_graphique_8h_a7ec39a89b39d70ecf43edaf8cafa8aec}\label{_graphique_8h_a7ec39a89b39d70ecf43edaf8cafa8aec}} 
+\index{Graphique.\+h@{Graphique.\+h}!dessine\+\_\+menu@{dessine\+\_\+menu}}
+\index{dessine\+\_\+menu@{dessine\+\_\+menu}!Graphique.\+h@{Graphique.\+h}}
+\subsubsection{\texorpdfstring{dessine\+\_\+menu()}{dessine\_menu()}}
+{\footnotesize\ttfamily void dessine\+\_\+menu (\begin{DoxyParamCaption}\item[{\hyperlink{structmenu}{Option}}]{option,  }\item[{int}]{valeur }\end{DoxyParamCaption})}
+
+
+
+Dessine l\textquotesingle{}intégralité du menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em option} & La liste chaînée contenant les options à afficher valeur Une valeur indiquant quel menu afficher (0 -\/ Principal / 1 -\/ Highscore) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_graphique_8h_aca08bacd11b8e45978f77b9287d45551}\label{_graphique_8h_aca08bacd11b8e45978f77b9287d45551}} 
+\index{Graphique.\+h@{Graphique.\+h}!dessine\+\_\+options@{dessine\+\_\+options}}
+\index{dessine\+\_\+options@{dessine\+\_\+options}!Graphique.\+h@{Graphique.\+h}}
+\subsubsection{\texorpdfstring{dessine\+\_\+options()}{dessine\_options()}}
+{\footnotesize\ttfamily void dessine\+\_\+options (\begin{DoxyParamCaption}\item[{\hyperlink{structmenu}{Option}}]{option,  }\item[{int}]{valeur }\end{DoxyParamCaption})}
+
+
+
+Dessine les options selon leur état (survolé ou non) et du menu actuel (Principal ou Highscore) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em option} & La liste chaînée contenant les options valeur Une valeur indiquant dans quel menu on se trouve (0 -\/ Principal / 1 -\/ Highscore) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_graphique_8h_aa90d0b7c92a440716e2c165ec72bbbf1}\label{_graphique_8h_aa90d0b7c92a440716e2c165ec72bbbf1}} 
+\index{Graphique.\+h@{Graphique.\+h}!init\+\_\+tab\+\_\+image@{init\+\_\+tab\+\_\+image}}
+\index{init\+\_\+tab\+\_\+image@{init\+\_\+tab\+\_\+image}!Graphique.\+h@{Graphique.\+h}}
+\subsubsection{\texorpdfstring{init\+\_\+tab\+\_\+image()}{init\_tab\_image()}}
+{\footnotesize\ttfamily void init\+\_\+tab\+\_\+image (\begin{DoxyParamCaption}\item[{\hyperlink{structmenu}{Option}}]{option }\end{DoxyParamCaption})}
+
+
+
+Fonction qui initialise un tableau d\textquotesingle{}image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em option} & La liste chaînée contenant les options \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_graphique_8h_a4520aa5e7a00b8bf0d1b6ab19d8be8b6}\label{_graphique_8h_a4520aa5e7a00b8bf0d1b6ab19d8be8b6}} 
+\index{Graphique.\+h@{Graphique.\+h}!recupere\+\_\+taille\+\_\+options@{recupere\+\_\+taille\+\_\+options}}
+\index{recupere\+\_\+taille\+\_\+options@{recupere\+\_\+taille\+\_\+options}!Graphique.\+h@{Graphique.\+h}}
+\subsubsection{\texorpdfstring{recupere\+\_\+taille\+\_\+options()}{recupere\_taille\_options()}}
+{\footnotesize\ttfamily void recupere\+\_\+taille\+\_\+options (\begin{DoxyParamCaption}\item[{\hyperlink{structmenu}{Option}}]{option }\end{DoxyParamCaption})}
+
+
+
+Récupère la taille des images du menu (Start, Highscore, Quit et Back) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em option} & La liste chaînée contenant les options \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_graphique_8h_a00907bb6336940e9b2db8a20716732ab}\label{_graphique_8h_a00907bb6336940e9b2db8a20716732ab}} 
+\index{Graphique.\+h@{Graphique.\+h}!sauvegarde\+\_\+nom\+\_\+joueur\+\_\+pour\+\_\+highscore@{sauvegarde\+\_\+nom\+\_\+joueur\+\_\+pour\+\_\+highscore}}
+\index{sauvegarde\+\_\+nom\+\_\+joueur\+\_\+pour\+\_\+highscore@{sauvegarde\+\_\+nom\+\_\+joueur\+\_\+pour\+\_\+highscore}!Graphique.\+h@{Graphique.\+h}}
+\subsubsection{\texorpdfstring{sauvegarde\+\_\+nom\+\_\+joueur\+\_\+pour\+\_\+highscore()}{sauvegarde\_nom\_joueur\_pour\_highscore()}}
+{\footnotesize\ttfamily void sauvegarde\+\_\+nom\+\_\+joueur\+\_\+pour\+\_\+highscore (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{nom\+\_\+joueur }\end{DoxyParamCaption})}
+
+
+
+Fonction qui demande au joueur d\textquotesingle{}entrer un nom pour son score. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nom\+\_\+joueur} & L\textquotesingle{}adresse du nom du joueur \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_graphique_8h_a8340f5220b3791d6e65165eec2650a86}\label{_graphique_8h_a8340f5220b3791d6e65165eec2650a86}} 
+\index{Graphique.\+h@{Graphique.\+h}!selectionne\+\_\+option@{selectionne\+\_\+option}}
+\index{selectionne\+\_\+option@{selectionne\+\_\+option}!Graphique.\+h@{Graphique.\+h}}
+\subsubsection{\texorpdfstring{selectionne\+\_\+option()}{selectionne\_option()}}
+{\footnotesize\ttfamily int selectionne\+\_\+option (\begin{DoxyParamCaption}\item[{char $\ast$}]{titre }\end{DoxyParamCaption})}
+
+
+
+Sélectionne une option. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em titre} & Le nom de l\textquotesingle{}option sélectionnée \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La valeur de l\textquotesingle{}option survolée
+\begin{DoxyItemize}
+\item 0 \+: Quit
+\item 1 \+: Start
+\item 2 \+: Highscore
+\item 3 \+: Back 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{_graphique_8h_ae083b7a392075cbef9a1e3cc2103895b}\label{_graphique_8h_ae083b7a392075cbef9a1e3cc2103895b}} 
+\index{Graphique.\+h@{Graphique.\+h}!survole\+\_\+et\+\_\+selectionne\+\_\+option@{survole\+\_\+et\+\_\+selectionne\+\_\+option}}
+\index{survole\+\_\+et\+\_\+selectionne\+\_\+option@{survole\+\_\+et\+\_\+selectionne\+\_\+option}!Graphique.\+h@{Graphique.\+h}}
+\subsubsection{\texorpdfstring{survole\+\_\+et\+\_\+selectionne\+\_\+option()}{survole\_et\_selectionne\_option()}}
+{\footnotesize\ttfamily int survole\+\_\+et\+\_\+selectionne\+\_\+option (\begin{DoxyParamCaption}\item[{\hyperlink{structmenu}{Option}}]{option,  }\item[{int}]{valeur }\end{DoxyParamCaption})}
+
+
+
+Indique à une option qu\textquotesingle{}on la survole à la souris. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em option} & La liste chaînée contenant les options valeur Une valeur indiquant dans quel menu on se trouve (0 -\/ Principale / 1 -\/ Highscore) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La valeur de l\textquotesingle{}option survolée (définie par selectionne\+\_\+option), -\/1 si on ne survole aucune option 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_graphique_8h_a3b8915e338c17262c0ffcaf3cc143362}\label{_graphique_8h_a3b8915e338c17262c0ffcaf3cc143362}} 
+\index{Graphique.\+h@{Graphique.\+h}!survole\+\_\+option@{survole\+\_\+option}}
+\index{survole\+\_\+option@{survole\+\_\+option}!Graphique.\+h@{Graphique.\+h}}
+\subsubsection{\texorpdfstring{survole\+\_\+option()}{survole\_option()}}
+{\footnotesize\ttfamily int survole\+\_\+option (\begin{DoxyParamCaption}\item[{\hyperlink{structmenu}{Option}}]{tmp,  }\item[{const \hyperlink{structmenu}{Option}}]{option }\end{DoxyParamCaption})}
+
+
+
+Change l\textquotesingle{}état de l\textquotesingle{}option et la sélectionne pour y accéder. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tmp} & La liste chaînée contenant les options option L\textquotesingle{}option sélectionnée \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La valeur de l\textquotesingle{}option survolée (définie par selectionne\+\_\+option), -\/1 si on ne survole aucune option 
+\end{DoxyReturn}

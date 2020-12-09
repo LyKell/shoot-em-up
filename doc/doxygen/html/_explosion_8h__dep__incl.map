@@ -1,0 +1,10 @@
+<map id="include/Explosion.h" name="include/Explosion.h">
+<area shape="rect" id="node2" href="$_ennemi_8h.html" title="Module qui gère la liste des ennemis. " alt="" coords="184,80,307,107"/>
+<area shape="rect" id="node3" href="$_collision_8h.html" title="Module tous ce qui concerne les collisions. " alt="" coords="5,155,133,181"/>
+<area shape="rect" id="node5" href="$_main_8c.html" title="Jeu Shoot&#39;em up. " alt="" coords="216,229,299,256"/>
+<area shape="rect" id="node6" href="$_graphique_8h.html" title="Module qui gère l&#39;affichage graphique. " alt="" coords="382,155,519,181"/>
+<area shape="rect" id="node9" href="$_explosion_8c.html" title="Module qui gère la liste des explosions. " alt="" coords="432,80,544,107"/>
+<area shape="rect" id="node8" href="$_ennemi_8c.html" title="Module qui gère la liste des ennemis. " alt="" coords="208,155,307,181"/>
+<area shape="rect" id="node4" href="$_collision_8c.html" title="Module tous ce qui concerne les collisions. " alt="" coords="17,229,122,256"/>
+<area shape="rect" id="node7" href="$_graphique_8c.html" title="Module qui gère l&#39;affichage graphique. " alt="" coords="393,229,508,256"/>
+</map>

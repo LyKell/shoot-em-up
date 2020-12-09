@@ -1,0 +1,6 @@
+<map id="include/Menu.h" name="include/Menu.h">
+<area shape="rect" id="node2" href="$_graphique_8h.html" title="Module qui gère l&#39;affichage graphique. " alt="" coords="10,80,147,107"/>
+<area shape="rect" id="node4" href="$_main_8c.html" title="Jeu Shoot&#39;em up. " alt="" coords="144,155,227,181"/>
+<area shape="rect" id="node5" href="$_menu_8c.html" title="Module s&#39;occupant des interractions avec le menu. " alt="" coords="223,80,310,107"/>
+<area shape="rect" id="node3" href="$_graphique_8c.html" title="Module qui gère l&#39;affichage graphique. " alt="" coords="5,155,120,181"/>
+</map>

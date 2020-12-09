@@ -1,0 +1,120 @@
+\hypertarget{_ennemi_8c}{}\section{src/\+Ennemi.c File Reference}
+\label{_ennemi_8c}\index{src/\+Ennemi.\+c@{src/\+Ennemi.\+c}}
+
+
+Module qui gère la liste des ennemis.  
+
+
+{\ttfamily \#include \char`\"{}../include/\+Ennemi.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/\+Déplacement.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$M\+L\+V/\+M\+L\+V\+\_\+all.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+Include dependency graph for Ennemi.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_ennemi_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_ennemi_8c_a4c959e88f2b04bfcf4fc7c08f5558103}{init\+\_\+liste\+\_\+ennemi} (\hyperlink{struct_liste__ennemi}{Liste\+\_\+ennemi} $\ast$liste\+\_\+ennemi)
+\begin{DoxyCompactList}\small\item\em Fonction qui initialise la liste des ennemis (sans allocation) \end{DoxyCompactList}\item 
+int \hyperlink{_ennemi_8c_ac71a3a515de9b5aa1c3a5a4921b6e082}{ajout\+\_\+ennemi} (\hyperlink{struct_liste__ennemi}{Liste\+\_\+ennemi} $\ast$liste\+\_\+ennemi, int vie, int largeur)
+\begin{DoxyCompactList}\small\item\em Fonction qui ajoute une ennemi à la liste des ennemis. \end{DoxyCompactList}\item 
+\hyperlink{struct_vaisseau}{Vaisseau} $\ast$ \hyperlink{_ennemi_8c_a0f9b0b1037e45d4592ff30c84ff731fe}{supprime\+\_\+ennemi} (\hyperlink{struct_liste__ennemi}{Liste\+\_\+ennemi} $\ast$liste\+\_\+ennemi, \hyperlink{struct_vaisseau}{Vaisseau} $\ast$\hyperlink{structvaisseau}{vaisseau}, int pos, \hyperlink{struct_liste__explosion}{Liste\+\_\+explosion} $\ast$liste\+\_\+explosion)
+\begin{DoxyCompactList}\small\item\em Fonction qui supprime un vaisseau en postion pos de la liste ennemis. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_ennemi_8c_a3926c0f0ce938a83d95949349474a1ba}\label{_ennemi_8c_a3926c0f0ce938a83d95949349474a1ba}} 
+int {\bfseries tir\+\_\+ennemi} (\hyperlink{struct_liste__ennemi}{Liste\+\_\+ennemi} $\ast$liste\+\_\+ennemi, \hyperlink{struct_vaisseau}{Vaisseau} $\ast$ennemi, const \hyperlink{struct_vaisseau}{Vaisseau} $\ast$joueur)
+\item 
+\mbox{\Hypertarget{_ennemi_8c_a7800cb331e4a36b7dc5b000c78e73ad0}\label{_ennemi_8c_a7800cb331e4a36b7dc5b000c78e73ad0}} 
+int {\bfseries tir\+\_\+boss} (\hyperlink{struct_liste__ennemi}{Liste\+\_\+ennemi} $\ast$liste\+\_\+ennemi, \hyperlink{struct_vaisseau}{Vaisseau} $\ast$ennemi, const \hyperlink{struct_vaisseau}{Vaisseau} $\ast$joueur)
+\item 
+\mbox{\Hypertarget{_ennemi_8c_a002bc58e8406e881ce38f6962db5e37a}\label{_ennemi_8c_a002bc58e8406e881ce38f6962db5e37a}} 
+int {\bfseries actualise\+\_\+ennemi} (\hyperlink{struct_liste__ennemi}{Liste\+\_\+ennemi} $\ast$liste\+\_\+ennemi, const \hyperlink{struct_vaisseau}{Vaisseau} $\ast$joueur, double accum, int hauteur, int largeur, int type, \hyperlink{struct_liste__explosion}{Liste\+\_\+explosion} $\ast$liste\+\_\+explosion)
+\item 
+void \hyperlink{_ennemi_8c_a0e8dba91c68e222063d42077b860bcbf}{free\+\_\+liste\+\_\+ennemi} (\hyperlink{struct_liste__ennemi}{Liste\+\_\+ennemi} $\ast$liste\+\_\+ennemi, \hyperlink{struct_liste__explosion}{Liste\+\_\+explosion} $\ast$liste\+\_\+explosion)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Module qui gère la liste des ennemis. 
+
+\begin{DoxyAuthor}{Author}
+B\+E\+R\+G\+E\+R\+ON Youssef S\+A\+V\+A\+NE Kevin 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+11 Janvier 2020
+\end{DoxyDate}
+Module qui gère la liste des ennemis en l\textquotesingle{}initialisant, ajoutant des éléments ou les supprimant 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_ennemi_8c_ac71a3a515de9b5aa1c3a5a4921b6e082}\label{_ennemi_8c_ac71a3a515de9b5aa1c3a5a4921b6e082}} 
+\index{Ennemi.\+c@{Ennemi.\+c}!ajout\+\_\+ennemi@{ajout\+\_\+ennemi}}
+\index{ajout\+\_\+ennemi@{ajout\+\_\+ennemi}!Ennemi.\+c@{Ennemi.\+c}}
+\subsubsection{\texorpdfstring{ajout\+\_\+ennemi()}{ajout\_ennemi()}}
+{\footnotesize\ttfamily int ajout\+\_\+ennemi (\begin{DoxyParamCaption}\item[{\hyperlink{struct_liste__ennemi}{Liste\+\_\+ennemi} $\ast$}]{liste\+\_\+ennemi,  }\item[{int}]{vie,  }\item[{int}]{largeur }\end{DoxyParamCaption})}
+
+
+
+Fonction qui ajoute une ennemi à la liste des ennemis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em liste\+\_\+ennemi} & L\textquotesingle{}adresse de la structure des ennemis vie La vie du nouvel ennemi largeur La largeur de la fenêtre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 en cas d\textquotesingle{}ajout échoué, 1 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ennemi_8c_a0e8dba91c68e222063d42077b860bcbf}\label{_ennemi_8c_a0e8dba91c68e222063d42077b860bcbf}} 
+\index{Ennemi.\+c@{Ennemi.\+c}!free\+\_\+liste\+\_\+ennemi@{free\+\_\+liste\+\_\+ennemi}}
+\index{free\+\_\+liste\+\_\+ennemi@{free\+\_\+liste\+\_\+ennemi}!Ennemi.\+c@{Ennemi.\+c}}
+\subsubsection{\texorpdfstring{free\+\_\+liste\+\_\+ennemi()}{free\_liste\_ennemi()}}
+{\footnotesize\ttfamily void free\+\_\+liste\+\_\+ennemi (\begin{DoxyParamCaption}\item[{\hyperlink{struct_liste__ennemi}{Liste\+\_\+ennemi} $\ast$}]{liste\+\_\+ennemi,  }\item[{\hyperlink{struct_liste__explosion}{Liste\+\_\+explosion} $\ast$}]{liste\+\_\+explosion }\end{DoxyParamCaption})}
+
+Fonction qui libère l\textquotesingle{}espace mémoire occupée par les ennemis et leur missile 
+\begin{DoxyParams}{Parameters}
+{\em liste\+\_\+ennemi} & L\textquotesingle{}adresse de la structure des ennemis \\
+\hline
+{\em liste\+\_\+explosion} & L\textquotesingle{}adresse de la structure des explosions \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_ennemi_8c_a4c959e88f2b04bfcf4fc7c08f5558103}\label{_ennemi_8c_a4c959e88f2b04bfcf4fc7c08f5558103}} 
+\index{Ennemi.\+c@{Ennemi.\+c}!init\+\_\+liste\+\_\+ennemi@{init\+\_\+liste\+\_\+ennemi}}
+\index{init\+\_\+liste\+\_\+ennemi@{init\+\_\+liste\+\_\+ennemi}!Ennemi.\+c@{Ennemi.\+c}}
+\subsubsection{\texorpdfstring{init\+\_\+liste\+\_\+ennemi()}{init\_liste\_ennemi()}}
+{\footnotesize\ttfamily int init\+\_\+liste\+\_\+ennemi (\begin{DoxyParamCaption}\item[{\hyperlink{struct_liste__ennemi}{Liste\+\_\+ennemi} $\ast$}]{liste\+\_\+ennemi }\end{DoxyParamCaption})}
+
+
+
+Fonction qui initialise la liste des ennemis (sans allocation) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em liste\+\_\+ennemi} & L\textquotesingle{}adresse de la structure des ennemis à initialiser \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ennemi_8c_a0f9b0b1037e45d4592ff30c84ff731fe}\label{_ennemi_8c_a0f9b0b1037e45d4592ff30c84ff731fe}} 
+\index{Ennemi.\+c@{Ennemi.\+c}!supprime\+\_\+ennemi@{supprime\+\_\+ennemi}}
+\index{supprime\+\_\+ennemi@{supprime\+\_\+ennemi}!Ennemi.\+c@{Ennemi.\+c}}
+\subsubsection{\texorpdfstring{supprime\+\_\+ennemi()}{supprime\_ennemi()}}
+{\footnotesize\ttfamily \hyperlink{struct_vaisseau}{Vaisseau}$\ast$ supprime\+\_\+ennemi (\begin{DoxyParamCaption}\item[{\hyperlink{struct_liste__ennemi}{Liste\+\_\+ennemi} $\ast$}]{liste\+\_\+ennemi,  }\item[{\hyperlink{struct_vaisseau}{Vaisseau} $\ast$}]{vaisseau,  }\item[{int}]{pos,  }\item[{\hyperlink{struct_liste__explosion}{Liste\+\_\+explosion} $\ast$}]{liste\+\_\+explosion }\end{DoxyParamCaption})}
+
+
+
+Fonction qui supprime un vaisseau en postion pos de la liste ennemis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em liste\+\_\+ennemi} & L\textquotesingle{}adresse de la structure des ennemis vaisseau L\textquotesingle{}adresse de la structure du vaisseau à supprimer pos La position du vaisseau à supprimer dans la liste liste\+\_\+explosion L\textquotesingle{}adresse de la structure des explosion \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L\textquotesingle{}adresse du vaisseau suivant 
+\end{DoxyReturn}

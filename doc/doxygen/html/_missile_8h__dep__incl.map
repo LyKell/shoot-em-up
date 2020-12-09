@@ -1,0 +1,14 @@
+<map id="include/Missile.h" name="include/Missile.h">
+<area shape="rect" id="node2" href="$_alli_xC3_xA9_8h.html" title="Module contenant les informations propres à un joueur. " alt="" coords="190,80,293,107"/>
+<area shape="rect" id="node4" href="$_collision_8c.html" title="Module tous ce qui concerne les collisions. " alt="" coords="53,229,158,256"/>
+<area shape="rect" id="node5" href="$_main_8c.html" title="Jeu Shoot&#39;em up. " alt="" coords="301,229,384,256"/>
+<area shape="rect" id="node7" href="$_graphique_8c.html" title="Module qui gère l&#39;affichage graphique. " alt="" coords="540,229,655,256"/>
+<area shape="rect" id="node9" href="$_ennemi_8h.html" title="Module qui gère la liste des ennemis. " alt="" coords="441,80,564,107"/>
+<area shape="rect" id="node11" href="$_tir_8h.html" title="Module qui gère les tirs des ennemis. " alt="" coords="817,80,911,107"/>
+<area shape="rect" id="node12" href="$_missile_8c.html" title="Module qui gère la liste des missiles. " alt="" coords="767,155,863,181"/>
+<area shape="rect" id="node3" href="$_collision_8h.html" title="Module tous ce qui concerne les collisions. " alt="" coords="177,155,305,181"/>
+<area shape="rect" id="node6" href="$_graphique_8h.html" title="Module qui gère l&#39;affichage graphique. " alt="" coords="381,155,518,181"/>
+<area shape="rect" id="node8" href="$_alli_xC3_xA9_8c.html" title="Module contenant les informations propres à un joueur. " alt="" coords="23,155,103,181"/>
+<area shape="rect" id="node10" href="$_ennemi_8c.html" title="Module qui gère la liste des ennemis. " alt="" coords="593,155,692,181"/>
+<area shape="rect" id="node13" href="$_tir_8c.html" title="Module qui gère les tirs des ennemis. " alt="" coords="887,155,958,181"/>
+</map>

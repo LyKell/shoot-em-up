@@ -1,0 +1,150 @@
+\hypertarget{_explosion_8c}{}\section{src/\+Explosion.c File Reference}
+\label{_explosion_8c}\index{src/\+Explosion.\+c@{src/\+Explosion.\+c}}
+
+
+Module qui gère la liste des explosions.  
+
+
+{\ttfamily \#include \char`\"{}../include/\+Explosion.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$M\+L\+V/\+M\+L\+V\+\_\+all.\+h$>$}\newline
+Include dependency graph for Explosion.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_explosion_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_explosion}{Explosion} $\ast$ \hyperlink{_explosion_8c_a567b5ee70a1fd4d6cab8a847206e8cf8}{allouer\+\_\+explosion} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Alloue la place nécessaire pour une explosion de coordonnée (x, y) \end{DoxyCompactList}\item 
+int \hyperlink{_explosion_8c_a1c53cb763a8b117508575b0bf8871838}{init\+\_\+liste\+\_\+explosion} (\hyperlink{struct_liste__explosion}{Liste\+\_\+explosion} $\ast$liste\+\_\+explosion)
+\begin{DoxyCompactList}\small\item\em Initialise la liste des explosions. \end{DoxyCompactList}\item 
+int \hyperlink{_explosion_8c_aa4694747adf75568c232154ee02760ac}{ajouter\+\_\+explosion} (\hyperlink{struct_liste__explosion}{Liste\+\_\+explosion} $\ast$liste\+\_\+explosion, int x, int y)
+\begin{DoxyCompactList}\small\item\em Ajoute une explosion à la liste des explosions. \end{DoxyCompactList}\item 
+void \hyperlink{_explosion_8c_a84e06d193c8dcac224512dfbde1723a5}{actualise\+\_\+explosion} (\hyperlink{struct_liste__explosion}{Liste\+\_\+explosion} $\ast$liste\+\_\+explosion)
+\begin{DoxyCompactList}\small\item\em Met à jour la frame à afficher de chaque explosion et enclenche sa suppression si nécessaire. \end{DoxyCompactList}\item 
+\hyperlink{struct_explosion}{Explosion} $\ast$ \hyperlink{_explosion_8c_a761d0b2366e278e6d970bf584f9de11b}{supprime\+\_\+explosion} (\hyperlink{struct_liste__explosion}{Liste\+\_\+explosion} $\ast$liste\+\_\+explosion, \hyperlink{struct_explosion}{Explosion} $\ast$\hyperlink{structexplosion}{explosion}, int pos)
+\begin{DoxyCompactList}\small\item\em Supprime une explosion de la liste d\textquotesingle{}explosions. \end{DoxyCompactList}\item 
+void \hyperlink{_explosion_8c_aee8a22cf996d33bff506018685d49b11}{free\+\_\+liste\+\_\+explosion} (\hyperlink{struct_liste__explosion}{Liste\+\_\+explosion} $\ast$liste\+\_\+explosion)
+\begin{DoxyCompactList}\small\item\em Libère la place allouée aux explosions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Module qui gère la liste des explosions. 
+
+\begin{DoxyAuthor}{Author}
+B\+E\+R\+G\+E\+R\+ON Youssef S\+A\+V\+A\+NE Kevin 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+11 Janvier 2020
+\end{DoxyDate}
+Module qui gère la liste des explosions en l\textquotesingle{}initialisant, ajoutant des éléments ou les supprimant 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_explosion_8c_a84e06d193c8dcac224512dfbde1723a5}\label{_explosion_8c_a84e06d193c8dcac224512dfbde1723a5}} 
+\index{Explosion.\+c@{Explosion.\+c}!actualise\+\_\+explosion@{actualise\+\_\+explosion}}
+\index{actualise\+\_\+explosion@{actualise\+\_\+explosion}!Explosion.\+c@{Explosion.\+c}}
+\subsubsection{\texorpdfstring{actualise\+\_\+explosion()}{actualise\_explosion()}}
+{\footnotesize\ttfamily void actualise\+\_\+explosion (\begin{DoxyParamCaption}\item[{\hyperlink{struct_liste__explosion}{Liste\+\_\+explosion} $\ast$}]{liste\+\_\+explosion }\end{DoxyParamCaption})}
+
+
+
+Met à jour la frame à afficher de chaque explosion et enclenche sa suppression si nécessaire. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em liste\+\_\+explosion} & La liste chaînée contenant les explosions \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_explosion_8c_aa4694747adf75568c232154ee02760ac}\label{_explosion_8c_aa4694747adf75568c232154ee02760ac}} 
+\index{Explosion.\+c@{Explosion.\+c}!ajouter\+\_\+explosion@{ajouter\+\_\+explosion}}
+\index{ajouter\+\_\+explosion@{ajouter\+\_\+explosion}!Explosion.\+c@{Explosion.\+c}}
+\subsubsection{\texorpdfstring{ajouter\+\_\+explosion()}{ajouter\_explosion()}}
+{\footnotesize\ttfamily int ajouter\+\_\+explosion (\begin{DoxyParamCaption}\item[{\hyperlink{struct_liste__explosion}{Liste\+\_\+explosion} $\ast$}]{liste\+\_\+explosion,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Ajoute une explosion à la liste des explosions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em liste\+\_\+explosion} & La liste chaînée contenant les explosions x La coordonnée X de l\textquotesingle{}explosion y La coordonnée Y de l\textquotesingle{}explosion \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 si l\textquotesingle{}explosion n\textquotesingle{}a pas pu être ajoutée, 1 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_explosion_8c_a567b5ee70a1fd4d6cab8a847206e8cf8}\label{_explosion_8c_a567b5ee70a1fd4d6cab8a847206e8cf8}} 
+\index{Explosion.\+c@{Explosion.\+c}!allouer\+\_\+explosion@{allouer\+\_\+explosion}}
+\index{allouer\+\_\+explosion@{allouer\+\_\+explosion}!Explosion.\+c@{Explosion.\+c}}
+\subsubsection{\texorpdfstring{allouer\+\_\+explosion()}{allouer\_explosion()}}
+{\footnotesize\ttfamily \hyperlink{struct_explosion}{Explosion}$\ast$ allouer\+\_\+explosion (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Alloue la place nécessaire pour une explosion de coordonnée (x, y) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & La coordonnée X de l\textquotesingle{}explosion y La coordonnée Y de l\textquotesingle{}explosion \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L\textquotesingle{}explosion allouée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_explosion_8c_aee8a22cf996d33bff506018685d49b11}\label{_explosion_8c_aee8a22cf996d33bff506018685d49b11}} 
+\index{Explosion.\+c@{Explosion.\+c}!free\+\_\+liste\+\_\+explosion@{free\+\_\+liste\+\_\+explosion}}
+\index{free\+\_\+liste\+\_\+explosion@{free\+\_\+liste\+\_\+explosion}!Explosion.\+c@{Explosion.\+c}}
+\subsubsection{\texorpdfstring{free\+\_\+liste\+\_\+explosion()}{free\_liste\_explosion()}}
+{\footnotesize\ttfamily void free\+\_\+liste\+\_\+explosion (\begin{DoxyParamCaption}\item[{\hyperlink{struct_liste__explosion}{Liste\+\_\+explosion} $\ast$}]{liste\+\_\+explosion }\end{DoxyParamCaption})}
+
+
+
+Libère la place allouée aux explosions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em liste\+\_\+explosion} & La liste chaînée contenant les explosions à libérer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_explosion_8c_a1c53cb763a8b117508575b0bf8871838}\label{_explosion_8c_a1c53cb763a8b117508575b0bf8871838}} 
+\index{Explosion.\+c@{Explosion.\+c}!init\+\_\+liste\+\_\+explosion@{init\+\_\+liste\+\_\+explosion}}
+\index{init\+\_\+liste\+\_\+explosion@{init\+\_\+liste\+\_\+explosion}!Explosion.\+c@{Explosion.\+c}}
+\subsubsection{\texorpdfstring{init\+\_\+liste\+\_\+explosion()}{init\_liste\_explosion()}}
+{\footnotesize\ttfamily int init\+\_\+liste\+\_\+explosion (\begin{DoxyParamCaption}\item[{\hyperlink{struct_liste__explosion}{Liste\+\_\+explosion} $\ast$}]{liste\+\_\+explosion }\end{DoxyParamCaption})}
+
+
+
+Initialise la liste des explosions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em liste\+\_\+explosion} & La liste chaînée contenant les explosions à initialiser \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_explosion_8c_a761d0b2366e278e6d970bf584f9de11b}\label{_explosion_8c_a761d0b2366e278e6d970bf584f9de11b}} 
+\index{Explosion.\+c@{Explosion.\+c}!supprime\+\_\+explosion@{supprime\+\_\+explosion}}
+\index{supprime\+\_\+explosion@{supprime\+\_\+explosion}!Explosion.\+c@{Explosion.\+c}}
+\subsubsection{\texorpdfstring{supprime\+\_\+explosion()}{supprime\_explosion()}}
+{\footnotesize\ttfamily \hyperlink{struct_explosion}{Explosion}$\ast$ supprime\+\_\+explosion (\begin{DoxyParamCaption}\item[{\hyperlink{struct_liste__explosion}{Liste\+\_\+explosion} $\ast$}]{liste\+\_\+explosion,  }\item[{\hyperlink{struct_explosion}{Explosion} $\ast$}]{explosion,  }\item[{int}]{pos }\end{DoxyParamCaption})}
+
+
+
+Supprime une explosion de la liste d\textquotesingle{}explosions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em liste\+\_\+explosion} & La liste chaînée contenant les explosions explosion L\textquotesingle{}explosion à supprimer pos La position de l\textquotesingle{}explosion dans la liste \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L\textquotesingle{}adresse de l\textquotesingle{}explosion suivante 
+\end{DoxyReturn}

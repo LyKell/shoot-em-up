@@ -1,0 +1,9 @@
+<map id="src/Collision.c" name="src/Collision.c">
+<area shape="rect" id="node4" href="$_collision_8h.html" title="Module tous ce qui concerne les collisions. " alt="" coords="127,80,267,107"/>
+<area shape="rect" id="node7" href="$_missile_8h.html" title="Module qui gère la liste des missiles. " alt="" coords="43,229,117,256"/>
+<area shape="rect" id="node5" href="$_ennemi_8h.html" title="Module qui gère la liste des ennemis. " alt="" coords="184,155,261,181"/>
+<area shape="rect" id="node8" href="$_explosion_8h.html" title="Module qui gère la liste des explosions. " alt="" coords="253,229,344,256"/>
+<area shape="rect" id="node9" href="$_sound_8h.html" title="Module qui gère le son du jeu. " alt="" coords="263,304,334,331"/>
+<area shape="rect" id="node10" href="$_alli_xC3_xA9_8h.html" title="Module contenant les informations propres à un joueur. " alt="" coords="101,155,160,181"/>
+<area shape="rect" id="node6" href="$_vaisseau_8h.html" title="Module gérant l&#39;allocation d&#39;un vaisseau. " alt="" coords="142,229,229,256"/>
+</map>
